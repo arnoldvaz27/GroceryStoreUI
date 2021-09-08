@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/drawable/backgr.xml" value="0.22135416666666666" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/drawable/custom_border.xml" value="0.20277777777777778" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/drawable/favourite_blank.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/drawable/product_round.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/drawable/round_add.xml" value="0.20277777777777778" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/drawable/round_style.xml" value="0.20277777777777778" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/drawable/search.xml" value="0.22135416666666666" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/layout/activity_main.xml" value="0.2980332829046899" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/layout/grocery_list_layout.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/layout/item_layout.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/layout/offer_layout.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/layout/product_details.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/layout/recyclerdata.xml" value="0.1638888888888889" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/layout/selling_layout.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/GroceryStoreUI/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11354166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
