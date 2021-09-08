@@ -25,7 +25,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements GroceryListeners, SellingAdapter.SellingListener, OfferAdapter.OfferListener {
 
     ActivityMainBinding binding;
-    RecyclerView phoneRecycler, phoneRecycler2, phoneRecycler3;
+    RecyclerView recyclerView, recyclerView1, recyclerView2;
     RecyclerView.Adapter adapter, adapter2, adapter3;
     ImageView imageView;
     GroceryHelper groceryHelper;
@@ -54,22 +54,21 @@ public class MainActivity extends AppCompatActivity implements GroceryListeners,
             }
         };
         handler.postDelayed(runnable, 2000);
-        phoneRecycler = binding.exclusiveOffer;
-        phoneRecycler2 = binding.bestSelling;
-        phoneRecycler3 = binding.groceries;
-        phoneRecycler();
+        recyclerView = binding.exclusiveOffer;
+        recyclerView1 = binding.bestSelling;
+        recyclerView2 = binding.groceries;
+        ProductRecycler();
     }
 
     @SuppressLint("UseCompatLoadingForColorStateLists")
-    private void phoneRecycler() {
+    private void ProductRecycler() {
 
-
-        phoneRecycler.setHasFixedSize(true);
-        phoneRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        phoneRecycler2.setHasFixedSize(true);
-        phoneRecycler2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        phoneRecycler3.setHasFixedSize(true);
-        phoneRecycler3.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView1.setHasFixedSize(true);
+        recyclerView1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView2.setHasFixedSize(true);
+        recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         ArrayList<OfferHelper> offerHelperArrayList = new ArrayList<>();
         offerHelperArrayList.add(new OfferHelper(R.drawable.banana, "Organic Banana", "$4.99", "7 pcs,Price"));
@@ -89,15 +88,15 @@ public class MainActivity extends AppCompatActivity implements GroceryListeners,
         adapter = new OfferAdapter(offerHelperArrayList,this);
         adapter3 = new SellingAdapter(sellingHelperArrayList,this);
         adapter2 = new GroceryAdapter(groceryHelperArrayList, this);
-        phoneRecycler.setAdapter(adapter);
-        phoneRecycler2.setAdapter(adapter3);
-        phoneRecycler3.setAdapter(adapter2);
+        recyclerView.setAdapter(adapter);
+        recyclerView1.setAdapter(adapter3);
+        recyclerView2.setAdapter(adapter2);
 
     }
 
     @Override
-    public void onMedicinesClicked(GroceryHelper note, int position) {
-        groceryHelper = note;
+    public void onProductClicked(GroceryHelper groceryHelper, int position) {
+        this.groceryHelper = groceryHelper;
         Intent mIntent;
         switch (position) {
             case 0:

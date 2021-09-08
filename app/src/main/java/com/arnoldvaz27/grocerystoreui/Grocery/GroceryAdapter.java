@@ -40,7 +40,7 @@ public class GroceryAdapter extends RecyclerView.Adapter<GroceryAdapter.GroceryV
         holder.image.setImageResource(storeHelper.getImage());
         holder.name.setText(storeHelper.getName());
         holder.linearLayout.setBackgroundTintList(storeHelper.getColor());
-        holder.linearLayout.setOnClickListener(v -> groceryListeners.onMedicinesClicked(groceryHelpers.get(position), position));
+        holder.linearLayout.setOnClickListener(v -> groceryListeners.onProductClicked(groceryHelpers.get(position), position));
     }
 
     @Override
